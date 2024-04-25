@@ -28,6 +28,9 @@ require_once('dbconnect.php');
       <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="homepage.php">Home</a>
         </li>  
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="login.php">Login</a>
+        </li>
       <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="registration.php">Register</a>
         </li>

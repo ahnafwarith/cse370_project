@@ -50,10 +50,12 @@ if(isset($_POST['username']) && isset($_POST['password'])){
       <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="homepage.php">Home</a>
         </li> 
-      <li class="nav-item">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="signin.php">Login</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="registration.php">Register</a>
         </li>
-        
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="additems.php">Add items</a>
         </li>

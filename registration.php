@@ -27,6 +27,9 @@
           <a class="nav-link active" aria-current="page" href="signin.php">Login</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="registration.php">Register</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="additems.php">Add items</a>
         </li>
         <li class="nav-item">

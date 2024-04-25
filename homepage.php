@@ -26,6 +26,9 @@
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="homepage.php">Home</a>
           </li>  
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="signin.php">Login</a>
+        </li>
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="registration.php">Register</a>
           </li>
@@ -48,6 +51,8 @@
                 <p class="bannerTagline">A dining experience worth sharing</p>
                 <div class="bannerIcons">
                     <a href=""><i class="fa fa-apple"></i></a>
+                    <a href=""><i class="fas fa-hotdog"></i></a>
+                    <a href=""><i class="fa fa-cutlery"></i></a>
                 </div>
             </div>
         </div>
