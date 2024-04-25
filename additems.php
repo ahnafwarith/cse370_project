@@ -1,7 +1,39 @@
 <?php
-// connect to the database
-require_once('dbconnect.php');
+$servername = "localhost";
+$username = "root";
+$password_server = "";
+$dbname = "login_register";
 
+// Create connection
+$conn = mysqli_connect($servername, $username, $password_server, $dbname);
+
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+} else {
+    mysqli_select_db($conn, $dbname);
+}
+
+// Handle form submission
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve form data
+    $itemname = $_POST['itemname'];
+    $picture = $_POST['picture'];
+    $quantity = $_POST['quantity'];
+    $description = $_POST['description'];
+
+    // Insert staff information into the database
+    $sql = "INSERT INTO inventory (itemname, picture, quantity, description) VALUES ('$itemname', '$picture', '$quantity', '$description')";
+
+    if (mysqli_query($conn, $sql)) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+}
+
+// Close connection
+mysqli_close($conn);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,7 +80,7 @@ require_once('dbconnect.php');
                 <h1>Add an item</h1>
             </div>
             <div class="LoginBody">
-                <form method='POST'>
+                <form action='additems.php' method='POST'>
                     <div class="LoginInputsContainer">
                         <label for="">Item name</label>
                         <input name="itemname" type="text" />
@@ -63,14 +95,12 @@ require_once('dbconnect.php');
                     </div>
                     <div class="LoginInputsContainer">
                         <label for="">Description</label>
-                        <input name = "description" type="password" />
+                        <input name = "description" type="text" />
                     </div>
                     <div class="LoginButtonContainer">
-                        <button>Upload</button>
+                        <button type='submit'>Upload</button>
                     </div>
                 </form>
-
             </div>
-
     </body>
 </html>

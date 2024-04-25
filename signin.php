@@ -16,7 +16,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
 	if(mysqli_num_rows($result) !=0 ){
 	
 		//echo "LET HIM ENTER";
-		header("Location: home.php");
+		header("Location: homepage.php");
 	}
 	else{
 		echo "Username or Password is wrong";

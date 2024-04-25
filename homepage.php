@@ -75,7 +75,7 @@
                 </div>
             
                 <div class="card" style="width: 18rem;">
-                    <img src="https://pbs.twimg.com/profile_images/771985725591998464/SwtgkoOL_400x400.jpg" class="card-img-top" alt="...">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQZGKPuAho38BWy9n6gSf-J2pQCYCCajFwIdg3clf-tg&s" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Hero Alom (name)</h5>
                         <p class="card-text">description</p>
